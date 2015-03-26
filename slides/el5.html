@@ -1,3 +1,12 @@
-<h2>el5</h2>
+<h2>Event loop in node.js (and es6!)</h2>
 
-<p>Please change me!</p>
+<code class="prettyprint">
+
+    require('net')<br/>
+    .createServer((socket)=>{<br/><br/>
+    &nbsp;console.log('Connection connected');<br/>
+    &nbsp;socket.on('data', req => socket.write(req.toString()))<br/>
+    })<br/>
+    .listen(8000);<br/>
+
+</print>

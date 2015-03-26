@@ -1,3 +1,20 @@
-<h2>el4</h2>
+<h2>Event loop in the Most Beautyful Language - ruby</h2>
 
-<p>Please change me!</p>
+<code class="prettyprint">
+
+    require 'eventmachine'<br/>
+    <br/>
+    module Echo<br/>
+     &nbsp;def post_init<br/>
+     &nbsp;&nbsp;puts "Connection Connected Yo"<br/>
+     &nbsp;end<br/>
+     &nbsp;def receive_data<br/>
+     &nbsp;&nbsp;send_data "#{data}"<br/>
+     &nbsp;&nbsp;close_connection if data =~ /quit/if<br/>
+     &nbsp;end<br/>
+    end<br/>
+    <br/>
+    EventMachine.run {<br/>
+ &nbsp;       EventMachine.start_server "127.0.0.1", 8081, Echo<br/>
+    }<br/>
+</code>

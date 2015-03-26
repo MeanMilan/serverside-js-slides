@@ -1,6 +1,5 @@
 [
-    "index.md",
-    "who.html",
+    "index.html",
     "whats-next.html",
     "really-quick-history.html",
     "enter-node-js.html",
@@ -16,7 +15,6 @@
     "event-loop-3.html",
     "el1.html",
     "el2.html",
-    "el3.html",
     "el4.html",
     "el5.html",
     "what-not-to-do.html",
