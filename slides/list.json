@@ -11,13 +11,18 @@
     "non-blocking-io-analogy.html",
     "non-blocking-io-2.html",
     "so.html",
-    "event-loop-2.html",
-    "event-loop-3.html",
-    "el1.html",
-    "el2.html",
-    "el4.html",
-    "el5.html",
-    "what-not-to-do.html",
+    [
+        "loop-img.html",
+        "event-loop-2.html",
+        "event-loop-3.html"
+    ],
+    "event_loop_as_lang.html",
+    "event_machine.html",
+    "event_loop_as_lang_es6.html",
+    [
+        "what-not-to-do.html",
+        "loop-img.html"
+    ],
     "what-to-do-apis.html",
     "what-to-do-fullstack-apps.html",
     "what-to-do-real-time-web-apps.html",
